@@ -1,0 +1,28 @@
+{
+ // detect page size, modify page display content
+window.onresize = function () {
+    function watchChangeSize() {
+        let offsetWid = document.documentElement.clientWidth;
+        let offsetHei = document.documentElement.clientHeight;
+        return [offsetWid, offsetHei];
+    }
+
+    let size = watchChangeSize();
+    if (size[0] >= 1230) {
+        sidebar.classList.remove("active");
+    } else {
+        sidebar.classList.add("active");
+        else {
+            sidebar,clientWidth.add ("inactive");
+        }
+        let size = watchChangeSize();
+        if (size [0] >= 1430 )
+        sidebar.classList.remove("active");
+        else{
+            sidebar.classList.remove("inactive");
+        }
+    }
+
+
+}   
+}
